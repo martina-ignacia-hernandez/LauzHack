@@ -1,0 +1,56 @@
+<!DOCTYPE
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title> Fraud Detection </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <div id="incoming-call">
+            <div class="static-circle">
+                <img src="file.png" alt="Static circle">
+                <p> FAID Activated </p>
+            </div>
+
+            <div class = "buttons">
+                <div class="call-button">
+                    <img src="llamada.png" alt="Button of call">
+                </div>
+                
+                <div class="hang-up-button">
+                    <img src="llamada-perdida.png" alt="Button of Hang up">
+                </div>
+            </div>
+            <div class="moving-circle" style="display: none;">
+                <img src="aicircle.gif" alt= "Moving circle">
+                <p> Analyzing outgoing call... </p>
+            </div>
+
+            <div class="header">
+                <p class="incoming-call">Incoming call...</p>
+                <p class="telephone">+34 123 456 789</p>
+
+            </div>
+
+            <a href="tel:" class="hang-up-button" style="display: none;">
+                <img src="llamada-perdida.png" alt="Button of Hang up">
+            </a>
+            
+            <div class="await-text">
+                <p>Nothing to analyze. <br> Waiting for a phone call<span class="dots"></span></p>
+            </div>
+            
+            <audio id="audio1" src="audio1.wav" type="audio/wav"></audio>
+
+            <script src="app.js"></script>
+
+        </div>
+
+        
+    </body>
+
+</html>
